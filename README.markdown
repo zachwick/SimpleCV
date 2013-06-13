@@ -12,6 +12,7 @@ Quick Links:
     * [Ubuntu](#ubuntu-1204)
     * [Virtual Environment](#virtualenv)
     * [Arch Linux](#arch-linux)
+    * [Parabola GNU/Linux](#parabola-gnulinux)
     * [Fedora](#fedora-18)
     * [MacOS](#mac-os-x-106-and-above)
     * [Windows](#windows-7vista)
@@ -118,6 +119,20 @@ Install using clone of SimpleCV repository
 Install development version using aur
 
     yaourt -S simplecv-git
+
+<a id="parabolagnulinux"></a>
+### Parabola GNU/Linux
+
+Install using clone of SimpleCV repository
+
+    pacman -S python2-numpy python2-scipy opencv python2-pygame python2-distribute ipython2
+    git clone https://github.com/sightmachine/SimpleCV.git
+    cd SimpleCV/
+    sudo python setup.py install
+
+*N.B.* In order to use the Camera class, you may have to install the 'lsof' utility
+
+    pacman -S lsof
 
 <a id="fedora"></a>
 ### Fedora 18
